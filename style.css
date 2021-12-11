@@ -1,0 +1,50 @@
+.main-nav {
+    display: flex;
+    background-color: orangered;
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+    padding: 1em;
+}
+
+.main-nav > ul {
+    display: flex;
+    flex: 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin-right: 1em;;
+}
+
+.main-nav > form {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 0;
+}
+
+.main-nav input {
+    flex: 1;
+}
+.main-nav button {
+    background-color: white;
+    border: 0;
+    border-radius: 1em;
+    color: orangered;
+    padding: 0 1em;
+    margin-left: .5em;
+}
+
+@media screen and (max-width:575px) {
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+}
